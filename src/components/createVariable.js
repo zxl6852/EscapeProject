@@ -1,6 +1,5 @@
-import * as PIXI from "pixi.js";
-// const PIXI = window.PIXI;
 
+import * as PIXI from "pixi.js";
 export const Application = PIXI.Application;
 export const loader = PIXI.Loader.shared;
 export const Sprite = PIXI.Sprite;

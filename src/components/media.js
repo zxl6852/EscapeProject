@@ -1,8 +1,7 @@
-// import "pixi-sound";
 
-export const imagesPath = '../../static/images/';
-export const musicsPath = '../../static/musics/';
-export const resourcesPath = '../../static/resources/';
+export const imagesPath = '${pageContext.request.contextPath}../../static/images/';
+export const musicsPath = '${pageContext.request.contextPath}../../static/musics/';
+export const resourcesPath = '${pageContext.request.contextPath}../../static/resources/';
 
 export const soundss = [
     musicsPath + "level1.mp3", //0
@@ -20,26 +19,6 @@ export const soundss = [
     musicsPath + "snowstorm.mp3", //12
 
 ];
-// soundss: [
-//   musicsPath + "level1.mp3", //0
-//   musicsPath + "level3.mp3", //1
-//   musicsPath + "crrect_answer3.mp3", //2
-//   musicsPath + "opendoor.mp3", //3
-//   musicsPath + "death.mp3", //4
-//   musicsPath + "success.wav", //5
-//   musicsPath + "openmusic.wav", //6
-//   musicsPath + "startclick.wav", //7
-// ],
-// soundss: [
-//   { name: "levle1", url: musicsPath + "level1.mp3" },
-//   { name: "level3", url: musicsPath + "level3.mp3" },
-//   { name: "crrect_answer3", url: musicsPath + "crrect_answer3.mp3" },
-//   { name: "opendoor", url: musicsPath + "opendoor.mp3" },
-//   { name: "death", url: musicsPath + "death.mp3" },
-//   { name: "success", url: musicsPath + "success.mp3" },
-//   { name: "openmusic", url: musicsPath + "openmusic.mp3" },
-//   { name: "startclick", url: musicsPath + "startclick.mp3" },
-// ],
 
 export const manifest = {
     loop1: resourcesPath + 'loops/loop1.mp3',
@@ -68,17 +47,3 @@ export const sprites = {
     'shot': { start: 17, end: 18 },
     'squit': { start: 19, end: 19.3 }
 };
-
-// 選擇音效
-// export function sound(object) {
-//     console.log(3, object.PIXI.sound)
-//     const sound = object.PIXI.sound.Sound.from({
-//         'url': resourcesPath + 'sprite.mp3',
-//         'sprites': sprites
-//     });
-// }
-// 選擇音效
-// export const sound = Window.PIXI.sound.Sound.from({
-//     'url': resourcesPath + 'sprite.mp3',
-//     'sprites': sprites
-// });
