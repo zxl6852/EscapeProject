@@ -1,3 +1,4 @@
+![escape_project](https://github.com/zxl6852/EscapeProject/blob/gh-pages/eP.png "escape_project") 
 # escape_project逃離計畫
 >
 > 講述這世上有罪過的人都將被關進監獄，唯有正視問題才能成功逃出。
